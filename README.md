@@ -46,7 +46,6 @@
 ---
 
 ## 🧩 System Architecture (WMS)
-```mermaid
 graph TD
   A[Next.js App<br/>Cards / Dashboards] --> B[Apollo Client<br/>GraphQL]
   B --> C[Supabase GraphQL / REST]
