@@ -1,4 +1,3 @@
-[AlexKwan_GitHub_Profile_README.md](https://github.com/user-attachments/files/22800645/AlexKwan_GitHub_Profile_README.md)
 # 👋 Hi there, I'm **Alex Kwan (aiexkwan)**
 💻 **Software Engineer | AI Systems Integrator | WMS Architect**  
 📍 Based in Manchester, UK  
