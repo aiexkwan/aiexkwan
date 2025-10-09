@@ -1,12 +1,7 @@
-<!-- Profile: Alex Kwan (aiexkwan) | Theme: Dark Orange / Cyber -->
-<p align="center">
-  <img src="https://img.shields.io/badge/Software%20Engineer-000?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/WMS%20Architect-111827?style=for-the-badge&labelColor=111827&color=F97316" />
-  <img src="https://img.shields.io/badge/AI%20Systems%20Integrator-111827?style=for-the-badge&labelColor=111827&color=EA580C" />
-</p>
-
-<h1 align="center">👋 Hi, I'm <b>Alex Kwan</b> (aiexkwan)</h1>
-<p align="center">📍 Manchester, UK · Clean architecture · Measurable efficiency · Sustainable innovation</p>
+[AlexKwan_GitHub_Profile_README.md](https://github.com/user-attachments/files/22800645/AlexKwan_GitHub_Profile_README.md)
+# 👋 Hi there, I'm **Alex Kwan (aiexkwan)**
+💻 **Software Engineer | AI Systems Integrator | WMS Architect**  
+📍 Based in Manchester, UK  
 
 ---
 
@@ -14,7 +9,7 @@
 我專注於 **Web-based WMS（倉庫管理系統）**、**AI/ML 整合** 及 **製造業自動化**。  
 目前以 **TypeScript + Next.js + Supabase + GraphQL** 為核心，結合 **AI Agent Orchestration** 與 **圖譜記憶（Neo4j）**，打造可持續演進的 SaaS 生態。
 
-- 🔧 正在主導多個 **TypeScript + Supabase** 專案（SaaS 化、一體化設計）
+- 🔧 主導多個 **TypeScript + Supabase** 專案（SaaS 化、一體化設計）  
 - 🧩 研究 **MCP servers、AI memory agents、可觀測性與可視化 dashboard**
 - 🧾 習慣以文件驅動（架構決策、RLS 策略、性能指標、測試策略）
 
@@ -46,46 +41,63 @@
 ---
 
 ## 🧩 System Architecture (WMS)
+
+```mermaid
 graph TD
   A[Next.js App<br/>Cards / Dashboards] --> B[Apollo Client<br/>GraphQL]
   B --> C[Supabase GraphQL / REST]
   C --> D[(PostgreSQL)]
   C --> E[Supabase Auth<br/>RLS Policies]
-  C --> F[Storage/Labels<br/>PDF/Images]
+  C --> F[Storage / Labels<br/>PDF / Images]
   D --> G[Views / Mat. Tables]
   A --> H[Edge Functions<br/>Webhooks / Printing]
-  H --> I[Label Service<br/>QR/Barcodes]
+  H --> I[Label Service<br/>QR / Barcodes]
   A --> J[Realtime Subscriptions]
   J --> C
-  D --> K[Analytics Exports<br/>CSV/PDF/Excel]
+  D --> K[Analytics Exports<br/>CSV / PDF / Excel]
+```
 
-🤖 AI Agent Orchestration (Memory-centric)
+---
+
+## 🤖 AI Agent Orchestration (Memory-centric)
+
+```mermaid
 flowchart LR
-U[User / Ops] <---> UI[Next.js UI]
-UI --> AG[Agent Orchestrator<br/>AutoGen / CrewAI / Graphiti MCP]
-AG --> RAG[RAG Pipeline<br/>Embeddings / Chunking / Policies]
-RAG --> KB[(Supabase Vector<br/>Docs / SOP / Orders)]
-AG --> MEM[(Neo4j Memory Graph<br/>episodes / facts / prefs)]
-AG --> SVC[Supabase Functions / Edge]
-SVC --> DB[(PostgreSQL)]
-AG --> OBS[Observability<br/>Logs / Metrics / Traces]
+  U[User / Ops] <---> UI[Next.js UI]
+  UI --> AG[Agent Orchestrator<br/>AutoGen / CrewAI / Graphiti MCP]
+  AG --> RAG[RAG Pipeline<br/>Embeddings / Chunking / Policies]
+  RAG --> KB[(Supabase Vector DB<br/>Docs / SOP / Orders)]
+  AG --> MEM[(Neo4j Memory Graph<br/>Episodes / Facts / Preferences)]
+  AG --> SVC[Supabase Functions / Edge]
+  SVC --> DB[(PostgreSQL)]
+  AG --> OBS[Observability<br/>Logs / Metrics / Traces]
+```
 
-🌱 Learning & Research
-•	RLS + user_metadata 權限模型、審計與可追蹤性
-•	Neo4j 圖譜記憶（Memory Graph）與 Data Lineage
-•	自動化 RAG（索引、策略、Prompt 套件化）
-•	MCP × Docker：工具即服務（Tool-as-Service）整合
+---
 
-📊 Stats
+## 🌱 Learning & Research
+
+- **RLS + user_metadata** 權限模型與審計追蹤  
+- **Neo4j Memory Graph** & Data Lineage  
+- **Automated RAG pipelines**（索引、策略、Prompt 組件化）  
+- **MCP × Docker**：Tool-as-a-Service 整合  
+
+---
+
+## 📊 Stats
 <p align="center">
-<img height="160em" src="https://github-readme-stats.vercel.app/api?username=aiexkwan&show_icons=true&theme=gruvbox&count_private=true" />
-<img height="160em" src="https://github-readme-streak-stats.herokuapp.com/?user=aiexkwan&theme=gruvbox" />
+  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=aiexkwan&show_icons=true&theme=gruvbox&count_private=true" />
+  <img height="160em" src="https://github-readme-streak-stats.herokuapp.com/?user=aiexkwan&theme=gruvbox" />
 </p>
 
-📫 Connect
+---
+
+## 📫 Connect
 <p align="center">
   <a href="https://github.com/aiexkwan"><img src="https://img.shields.io/badge/GitHub-000?style=flat&logo=github&logoColor=white"/></a>
   <a href="mailto:aiexkwan@gmail.com"><img src="https://img.shields.io/badge/Email-F97316?style=flat&logo=gmail&logoColor=white"/></a>
-  <!-- 可選：<a href="https://www.linkedin.com/in/aiexkwan"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white"/></a> -->
 </p>
 
+---
+
+### ✨ “Build systems that learn — and people who evolve.”
