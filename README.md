@@ -18,9 +18,6 @@
 | Project | Description | Tech | Activity |
 |:--|:--|:--|:--|
 | [**web-pennine-wms**](https://github.com/aiexkwan/web-pennine-wms) | 企業級 Web WMS（掃碼標籤、RLS、報表、卡片化 UI） | TypeScript · Next.js · Supabase · GraphQL | ⏱️ Active |
-| [**online-stock-control-system**](https://github.com/aiexkwan/online-stock-control-system) | 在線存貨管理（多用戶、權限、報表） | TypeScript · Supabase | 📅 Ongoing |
-| [**blog-with-comments**](https://github.com/aiexkwan/blog-with-comments) | 可評論的極簡網誌平台 | TypeScript | 🕓 Active |
-| [**ai-sdk-starter-xai**](https://github.com/aiexkwan/ai-sdk-starter-xai) | 建構 AI-integrated SDK 的起步範本 | TypeScript | 🧩 Active |
 
 > 🔎 更多專案（含私有倉庫）：WMS SaaS、AI Agent 工具鏈、可視化分析卡片
 
