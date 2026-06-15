@@ -1,86 +1,103 @@
 # 👋 Hi there, I'm **Alex Kwan (aiexkwan)**
-💻 **Software Engineer | AI Systems Integrator | WMS Architect**  
+
+💻 **Full-stack Engineer · Native macOS Developer · AI-Augmented Builder**  
 📍 Based in Manchester, UK  
 
 ---
 
 ## 🧠 About
-我專注於 **Web-based WMS（倉庫管理系統）**、**AI/ML 整合** 及 **製造業自動化**。  
-目前以 **TypeScript + Next.js + Supabase + GraphQL** 為核心，結合 **AI Agent Orchestration** 與 **圖譜記憶（Neo4j）**，打造可持續演進的 SaaS 生態。
 
-- 🔧 主導多個 **TypeScript + Supabase** 專案（SaaS 化、一體化設計）  
-- 🧩 研究 **MCP servers、AI memory agents、可觀測性與可視化 dashboard**
-- 🧾 習慣以文件驅動（架構決策、RLS 策略、性能指標、測試策略）
+I build production systems across the full stack — **TypeScript** web apps, **Rust** trading engines, **Swift** native macOS tools — and wire them together with **AI agent orchestration** and **custom MCP servers**.
+
+Currently building the **Aurora Ecosystem**: an integrated suite spanning warehouse management, algorithmic trading, developer tooling, and AI-powered personal assistants — all connected through a shared data layer on **Supabase + PostgreSQL**.
+
+- 🏗️ Architect of **Aurora-MS** — enterprise Web WMS serving live manufacturing operations  
+- 🤖 Built a custom **MCP server**, **CLI toolchain**, and **Claude Code harness** for AI-augmented development  
+- 🍎 Ship native **macOS menu bar apps** (Swift + Rust FFI) for developer productivity  
 
 ---
 
-## 🚀 Featured Projects
-| Project | Description | Tech | Activity |
-|:--|:--|:--|:--|
-| [**web-pennine-wms**](https://github.com/aiexkwan/web-pennine-wms) | 企業級 Web WMS（掃碼標籤、RLS、報表、卡片化 UI） | TypeScript · Next.js · Supabase · GraphQL | ⏱️ Active |
+## 🚀 Projects
 
-> 🔎 更多專案（含私有倉庫）：WMS SaaS、AI Agent 工具鏈、可視化分析卡片
+### Aurora Ecosystem
+
+| Project | Description | Tech | |
+|:--|:--|:--|:--|
+| **Aurora-MS** | Enterprise Web WMS — label printing, route planning, RLS multi-tenancy, AI-assisted ops | TypeScript · Next.js · Supabase · AI SDK | 🔒 Private |
+| **Aurora-MCP** | Custom MCP server — finance aggregation, purchase tracking, trading PnL | TypeScript · Supabase · Vercel | 🔒 Private |
+| **Aurora-CLI** | Developer CLI — DB security gate, hook system, migration tooling | TypeScript · Bun | 🔒 Private |
+| **Aurora-Trading** | Algorithmic crypto trading bot — regime detection, risk management | Rust · HyperLiquid SDK · SQLx | 🔒 Private |
+| **Aurora-Assistant** | Nerve Layer daemon — Claude Code session orchestration, Telegram interface | TypeScript · Supabase | 🔒 Private |
+
+### Open Source
+
+| Project | Description | Tech | |
+|:--|:--|:--|:--|
+| [**TokenBar**](https://github.com/aiexkwan/TokenBar) | macOS menu bar AI token monitor — Liquid Glass, 3D contribution graph, 25+ agent support | Swift · Rust FFI · macOS 14+ | ⭐ Public |
+| [**agentpet**](https://github.com/aiexkwan/agentpet) | macOS desktop pet that monitors AI coding agents in real time — multi-agent status, XP levels | Swift · SwiftUI · macOS 13+ | ⭐ Public |
+| [**Aurora-statusline**](https://github.com/aiexkwan/Aurora-statusline) | Rich status line plugin for Claude Code — model, context, cache, cost tracking | TypeScript · Claude Code Plugin | ⭐ Public |
 
 ---
 
 ## 🧰 Tech Stack
+
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,nextjs,react,apollo,graphql,supabase,postgres,nodejs,python,neo4j,docker,vercel,git&perline=7" />
+  <img src="https://skillicons.dev/icons?i=ts,nextjs,react,supabase,postgres,rust,swift,bun,docker,vercel,git&perline=6" />
 </p>
 
-- 前端：Next.js（App Router）、React、Tailwind、shadcn/ui  
-- 後端：Supabase（Auth/RLS/Functions/Storage/Realtime）、Edge Functions  
-- 資料：PostgreSQL、Row Level Security、GraphQL（Apollo + Codegen）  
-- AI：RAG pipeline、Agent Orchestration（AutoGen / CrewAI / Graphiti MCP）、向量檢索  
-- Dev：Docker、GitHub Actions、Playwright / Vitest
+- **Web**: Next.js (App Router) · React · Tailwind · shadcn/ui · Framer Motion  
+- **Backend**: Supabase (Auth / RLS / Edge Functions / Storage / Realtime) · TanStack Query  
+- **Systems**: Rust (async, workspace crates) · SQLx · HyperLiquid SDK  
+- **Native**: Swift 6 · SwiftUI · Rust FFI (C-ABI staticlib) · Liquid Glass  
+- **AI**: Vercel AI SDK · Custom MCP Servers · Claude Code Harness (skills / hooks / agents)  
+- **Dev**: Bun · GitHub Actions · Playwright · Vitest  
 
 ---
 
-## 🧩 System Architecture (WMS)
+## 🗺️ Aurora Ecosystem Overview
 
 ```mermaid
-graph TD
-  A[Next.js App<br/>Cards / Dashboards] --> B[Apollo Client<br/>GraphQL]
-  B --> C[Supabase GraphQL / REST]
-  C --> D[(PostgreSQL)]
-  C --> E[Supabase Auth<br/>RLS Policies]
-  C --> F[Storage / Labels<br/>PDF / Images]
-  D --> G[Views / Mat. Tables]
-  A --> H[Edge Functions<br/>Webhooks / Printing]
-  H --> I[Label Service<br/>QR / Barcodes]
-  A --> J[Realtime Subscriptions]
-  J --> C
-  D --> K[Analytics Exports<br/>CSV / PDF / Excel]
+graph TB
+  subgraph Native["🍎 macOS Native"]
+    TB[TokenBar<br/>Swift + Rust FFI]
+    AP[agentpet<br/>Swift]
+    SL[Aurora-statusline<br/>TS Plugin]
+  end
+
+  subgraph Core["🏗️ Core Platform"]
+    MS[Aurora-MS<br/>Next.js WMS]
+    MCP[Aurora-MCP<br/>MCP Server]
+    CLI[Aurora-CLI<br/>Dev Toolchain]
+    AST[Aurora-Assistant<br/>Nerve Layer]
+  end
+
+  subgraph Trading["📈 Trading"]
+    TR[Aurora-Trading<br/>Rust Engine]
+  end
+
+  subgraph Data["🗄️ Shared Data Layer"]
+    SB[(Supabase<br/>Auth · RLS · Storage)]
+    PG[(PostgreSQL)]
+  end
+
+  MS --> SB
+  MCP --> SB
+  AST --> SB
+  TR --> PG
+  CLI --> PG
+
+  MCP -.->|tool calls| MS
+  AST -.->|session orchestration| CLI
+  TB -.->|reads local logs| AP
+  SL -.->|Claude Code plugin| CLI
+
+  TG[Telegram] <--> AST
 ```
-
----
-
-## 🤖 AI Agent Orchestration (Memory-centric)
-
-```mermaid
-flowchart LR
-  U[User / Ops] <---> UI[Next.js UI]
-  UI --> AG[Agent Orchestrator<br/>AutoGen / CrewAI / Graphiti MCP]
-  AG --> RAG[RAG Pipeline<br/>Embeddings / Chunking / Policies]
-  RAG --> KB[(Supabase Vector DB<br/>Docs / SOP / Orders)]
-  AG --> MEM[(Neo4j Memory Graph<br/>Episodes / Facts / Preferences)]
-  AG --> SVC[Supabase Functions / Edge]
-  SVC --> DB[(PostgreSQL)]
-  AG --> OBS[Observability<br/>Logs / Metrics / Traces]
-```
-
----
-
-## 🌱 Learning & Research
-
-- **RLS + user_metadata** 權限模型與審計追蹤  
-- **Neo4j Memory Graph** & Data Lineage  
-- **Automated RAG pipelines**（索引、策略、Prompt 組件化）  
-- **MCP × Docker**：Tool-as-a-Service 整合  
 
 ---
 
 ## 📊 Stats
+
 <p align="center">
   <img height="160em" src="https://github-readme-stats.vercel.app/api?username=aiexkwan&show_icons=true&theme=gruvbox&count_private=true" />
   <img height="160em" src="https://github-readme-streak-stats.herokuapp.com/?user=aiexkwan&theme=gruvbox" />
@@ -89,6 +106,7 @@ flowchart LR
 ---
 
 ## 📫 Connect
+
 <p align="center">
   <a href="https://github.com/aiexkwan"><img src="https://img.shields.io/badge/GitHub-000?style=flat&logo=github&logoColor=white"/></a>
   <a href="mailto:aiexkwan@gmail.com"><img src="https://img.shields.io/badge/Email-F97316?style=flat&logo=gmail&logoColor=white"/></a>
@@ -96,4 +114,4 @@ flowchart LR
 
 ---
 
-### ✨ “Build systems that learn — and people who evolve.”
+### ✨ "Build systems that learn — and people who evolve."
