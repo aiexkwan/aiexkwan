@@ -54,48 +54,6 @@ Currently building the **Aurora Ecosystem**: an integrated suite spanning wareho
 
 ---
 
-## 🗺️ Aurora Ecosystem Overview
-
-```mermaid
-graph TB
-  subgraph Native["🍎 macOS Native"]
-    TB[TokenBar<br/>Swift + Rust FFI]
-    AP[agentpet<br/>Swift]
-    SL[Aurora-statusline<br/>TS Plugin]
-  end
-
-  subgraph Core["🏗️ Core Platform"]
-    MS[Aurora-MS<br/>Next.js WMS]
-    MCP[Aurora-MCP<br/>MCP Server]
-    CLI[Aurora-CLI<br/>Dev Toolchain]
-    AST[Aurora-Assistant<br/>Nerve Layer]
-  end
-
-  subgraph Trading["📈 Trading"]
-    TR[Aurora-Trading<br/>Rust Engine]
-  end
-
-  subgraph Data["🗄️ Shared Data Layer"]
-    SB[(Supabase<br/>Auth · RLS · Storage)]
-    PG[(PostgreSQL)]
-  end
-
-  MS --> SB
-  MCP --> SB
-  AST --> SB
-  TR --> PG
-  CLI --> PG
-
-  MCP -.->|tool calls| MS
-  AST -.->|session orchestration| CLI
-  TB -.->|reads local logs| AP
-  SL -.->|Claude Code plugin| CLI
-
-  TG[Telegram] <--> AST
-```
-
----
-
 ## 📊 Stats
 
 <p align="center">
