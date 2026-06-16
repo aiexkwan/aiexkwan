@@ -1,19 +1,19 @@
 # 👋 Hi there, I'm **Alex Kwan (aiexkwan)**
 
-💻 **Full-stack Engineer · Native macOS Developer · AI-Augmented Builder**  
+💻 **Full-stack Engineer · AI-Augmented Builder**  
 📍 Based in Manchester, UK  
 
 ---
 
 ## 🧠 About
 
-I build production systems across the full stack — **TypeScript** web apps, **Rust** trading engines, **Swift** native macOS tools — and wire them together with **AI agent orchestration** and **custom MCP servers**.
+I build production systems across the full stack — **TypeScript** web apps, **Rust** trading engines — and wire them together with **AI agent orchestration** and **custom MCP servers**.
 
 Currently building the **Aurora Ecosystem**: an integrated suite spanning warehouse management, algorithmic trading, developer tooling, and AI-powered personal assistants — all connected through a shared data layer on **Supabase + PostgreSQL**.
 
 - 🏗️ Architect of **Aurora-MS** — enterprise Web WMS serving live manufacturing operations  
 - 🤖 Built a custom **MCP server**, **CLI toolchain**, and **Claude Code harness** for AI-augmented development  
-- 🍎 Ship native **macOS menu bar apps** (Swift + Rust FFI) for developer productivity  
+- 🍎 Contributor to open-source **macOS developer tools** ([TokenBar](https://github.com/Nanako0129/TokenBar), [agentpet](https://github.com/ntd4996/agentpet))  
 
 ---
 
@@ -33,22 +33,21 @@ Currently building the **Aurora Ecosystem**: an integrated suite spanning wareho
 
 | Project | Description | Tech | |
 |:--|:--|:--|:--|
-| [**TokenBar**](https://github.com/aiexkwan/TokenBar) | macOS menu bar AI token monitor — Liquid Glass, 3D contribution graph, 25+ agent support | Swift · Rust FFI · macOS 14+ | ⭐ Public |
-| [**agentpet**](https://github.com/aiexkwan/agentpet) | macOS desktop pet that monitors AI coding agents in real time — multi-agent status, XP levels | Swift · SwiftUI · macOS 13+ | ⭐ Public |
-| [**Aurora-statusline**](https://github.com/aiexkwan/Aurora-statusline) | Rich status line plugin for Claude Code — model, context, cache, cost tracking | TypeScript · Claude Code Plugin | ⭐ Public |
+| [**Aurora-statusline**](https://github.com/aiexkwan/Aurora-statusline) | Rich status line plugin for Claude Code — model, context, cache, cost tracking | TypeScript · Claude Code Plugin | ⭐ Original |
+| [**TokenBar**](https://github.com/Nanako0129/TokenBar) | macOS menu bar AI token monitor — contributor (Liquid Glass, 3D graph) | Swift · Rust FFI | 🍴 Fork |
+| [**agentpet**](https://github.com/ntd4996/agentpet) | macOS desktop pet for AI coding agents — contributor | Swift · SwiftUI | 🍴 Fork |
 
 ---
 
 ## 🧰 Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,nextjs,react,supabase,postgres,rust,swift,bun,docker,vercel,git&perline=6" />
+  <img src="https://skillicons.dev/icons?i=ts,nextjs,react,supabase,postgres,rust,bun,docker,vercel,git&perline=5" />
 </p>
 
 - **Web**: Next.js (App Router) · React · Tailwind · shadcn/ui · Framer Motion  
 - **Backend**: Supabase (Auth / RLS / Edge Functions / Storage / Realtime) · TanStack Query  
 - **Systems**: Rust (async, workspace crates) · SQLx · HyperLiquid SDK  
-- **Native**: Swift 6 · SwiftUI · Rust FFI (C-ABI staticlib) · Liquid Glass  
 - **AI**: Vercel AI SDK · Custom MCP Servers · Claude Code Harness (skills / hooks / agents)  
 - **Dev**: Bun · GitHub Actions · Playwright · Vitest  
 
