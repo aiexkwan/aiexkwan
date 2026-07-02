@@ -1,63 +1,94 @@
-# 👋 Hi there, I'm **Alex Kwan (aiexkwan)**
+# Alex Kwan · `aiexkwan`
 
-💻 **Full-stack Engineer · AI-Augmented Builder**  
-📍 Based in Manchester, UK  
+**Full-stack Engineer · AI-Augmented Builder** — Manchester, UK 🇬🇧
 
----
-
-## 🧠 About
-
-I build production systems across the full stack — **TypeScript** web apps, **Rust** trading engines — and wire them together with **AI agent orchestration** and **custom MCP servers**.
-
-Currently building the **Aurora Ecosystem**: an integrated suite spanning warehouse management, algorithmic trading, developer tooling, and AI-powered personal assistants — all connected through a shared data layer on **Supabase + PostgreSQL**.
-
-- 🏗️ Architect of **Aurora-MS** — enterprise Web WMS serving live manufacturing operations  
-- 🤖 Built a custom **MCP server**, **CLI toolchain**, and **Claude Code harness** for AI-augmented development  
-- 🍎 Contributor to open-source **macOS developer tools** ([TokenBar](https://github.com/Nanako0129/TokenBar), [agentpet](https://github.com/ntd4996/agentpet))  
+I build production systems across the full stack — **TypeScript** web apps, **Rust** trading engines — and wire them together with **AI agent orchestration**, a **custom MCP server**, and a heavily-tuned **Claude Code harness**.
 
 ---
 
-## 🚀 Projects
+## 🌌 Aurora Ecosystem
 
-### Aurora Ecosystem
+One shared data layer. Every project plugs into it.
+
+```mermaid
+graph TB
+    subgraph DATA["☁️ Shared Data Layer"]
+        DB[("Supabase<br/>PostgreSQL · RLS · Edge Functions")]
+    end
+
+    subgraph PROD["🏭 Production Systems"]
+        WMS["<b>Aurora-MS</b><br/>Enterprise Web WMS<br/><i>Next.js · AI SDK</i>"]
+        TRADE["<b>Aurora-Trading</b><br/>Algo Crypto Trading Bot<br/><i>Rust · HyperLiquid</i>"]
+    end
+
+    subgraph AI["🤖 AI Control Plane"]
+        OS["<b>AuroraOS</b><br/>Desktop AI Assistant<br/><i>Electron · Claude Code Gateway</i>"]
+        MCP["<b>Aurora-MCP</b><br/>Custom MCP Server<br/><i>Finance · Purchases · PnL</i>"]
+        CC["Claude Code Harness<br/><i>skills · hooks · agents</i>"]
+    end
+
+    subgraph TOOLING["🧰 Dev Tooling"]
+        CLI["<b>Aurora-CLI</b><br/>DB Security Gate · Quality Gates<br/><i>Bun</i>"]
+        SL["<b>Aurora-statusline</b><br/>Claude Code Status Line"]
+        VAULT["<b>Memory Vault</b><br/>ADRs · FDRs · Code Wiki"]
+    end
+
+    WMS --> DB
+    TRADE --> DB
+    MCP --> DB
+    OS --> MCP
+    OS --> CC
+    CC --> MCP
+    CC -.-> VAULT
+    CC -.-> SL
+    CLI -.->|quality gates| WMS
+    CLI -.->|quality gates| TRADE
+    CLI -.->|quality gates| OS
+
+    style DATA fill:#1a1b26,stroke:#7aa2f7,color:#c0caf5
+    style PROD fill:#1a1b26,stroke:#9ece6a,color:#c0caf5
+    style AI fill:#1a1b26,stroke:#bb9af7,color:#c0caf5
+    style TOOLING fill:#1a1b26,stroke:#e0af68,color:#c0caf5
+```
 
 | Project | Description | Tech | |
-|:--|:--|:--|:--|
-| **Aurora-MS** | Enterprise Web WMS — label printing, route planning, RLS multi-tenancy, AI-assisted ops | TypeScript · Next.js · Supabase · AI SDK | 🔒 Private |
-| **Aurora-MCP** | Custom MCP server — finance aggregation, purchase tracking, trading PnL | TypeScript · Supabase · Vercel | 🔒 Private |
-| **Aurora-CLI** | Developer CLI — DB security gate, hook system, migration tooling | TypeScript · Bun | 🔒 Private |
-| **Aurora-Trading** | Algorithmic crypto trading bot — regime detection, risk management | Rust · HyperLiquid SDK · SQLx | 🔒 Private |
-| **Aurora-Assistant** | Nerve Layer daemon — Claude Code session orchestration, Telegram interface | TypeScript · Supabase | 🔒 Private |
+|:--|:--|:--|:--:|
+| **Aurora-MS** | Enterprise Web WMS serving live manufacturing ops — label printing, route planning, RLS multi-tenancy, AI-assisted operations | TypeScript · Next.js · Supabase · AI SDK | 🔒 |
+| **AuroraOS** | Local desktop AI assistant — Electron gateway control plane for Claude Code session orchestration | TypeScript · Electron · Supabase | 🔒 |
+| **Aurora-Trading** | Algorithmic crypto trading bot — regime detection, risk management, live PnL tracking | Rust · HyperLiquid SDK · SQLx | 🔒 |
+| **Aurora-MCP** | Custom MCP server — finance aggregation, purchase tracking, trading PnL, personal data tools | TypeScript · Supabase · Vercel | 🔒 |
+| **Aurora-CLI** | Developer CLI — DB security gate, parallel quality gates, worktree state-machine merge, session analytics | TypeScript · Bun | 🔒 |
+| **Memory Vault** | Cross-project knowledge store — ADRs, FDRs, decision records, code wiki | Markdown | 🔒 |
 
-### Open Source
+## 🌍 Open Source
 
-| Project | Description | Tech | |
+| Project | Role | Description | Tech |
 |:--|:--|:--|:--|
-| [**Aurora-statusline**](https://github.com/aiexkwan/Aurora-statusline) | Rich status line plugin for Claude Code — model, context, cache, cost tracking | TypeScript · Claude Code Plugin | ⭐ Original |
-| [**TokenBar**](https://github.com/Nanako0129/TokenBar) | macOS menu bar AI token monitor — contributor (Liquid Glass, 3D graph) | Swift · Rust FFI | 🍴 Fork |
-| [**agentpet**](https://github.com/ntd4996/agentpet) | macOS desktop pet for AI coding agents — contributor | Swift · SwiftUI | 🍴 Fork |
+| [**Aurora-statusline**](https://github.com/aiexkwan/Aurora-statusline) | ⭐ Author | Rich status line for Claude Code — model, context, cache & cost tracking | TypeScript |
+| [**agentpet**](https://github.com/ntd4996/agentpet) | 🤝 Contributor · 10 merged PRs | Native macOS menu bar desktop pet that monitors AI coding agents in real time | Swift · SwiftUI |
+| [**TokenBar**](https://github.com/Nanako0129/TokenBar) | 🤝 Contributor · 2 merged PRs | AI token usage & quota monitor for the macOS menu bar — Liquid Glass, 3D contribution graph | Swift · Rust FFI |
 
 ---
 
 ## 🧰 Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,nextjs,react,supabase,postgres,rust,bun,docker,vercel,git&perline=5" />
+  <img src="https://skillicons.dev/icons?i=ts,nextjs,react,tailwind,supabase,postgres,rust,swift,bun,electron,docker,vercel,git,githubactions&perline=7" />
 </p>
 
-- **Web**: Next.js (App Router) · React · Tailwind · shadcn/ui · Framer Motion  
-- **Backend**: Supabase (Auth / RLS / Edge Functions / Storage / Realtime) · TanStack Query  
-- **Systems**: Rust (async, workspace crates) · SQLx · HyperLiquid SDK  
-- **AI**: Vercel AI SDK · Custom MCP Servers · Claude Code Harness (skills / hooks / agents)  
-- **Dev**: Bun · GitHub Actions · Playwright · Vitest  
+- **Web** — Next.js (App Router) · React · Tailwind · shadcn/ui · TanStack Query
+- **Backend** — Supabase (Auth / RLS / Edge Functions / Realtime) · PostgreSQL
+- **Systems** — Rust (async, workspace crates) · SQLx · HyperLiquid SDK
+- **AI** — Custom MCP servers · Claude Code harness (skills / hooks / subagents / workflows) · Vercel AI SDK
+- **Dev** — Bun · GitHub Actions · Playwright · Vitest
 
 ---
 
 ## 📊 Stats
 
 <p align="center">
-  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=aiexkwan&show_icons=true&theme=gruvbox&count_private=true" />
-  <img height="160em" src="https://github-readme-streak-stats.herokuapp.com/?user=aiexkwan&theme=gruvbox" />
+  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=aiexkwan&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&bg_color=1a1b26" />
+  <img height="160em" src="https://github-readme-streak-stats.herokuapp.com/?user=aiexkwan&theme=tokyonight&hide_border=true&background=1a1b26" />
 </p>
 
 ---
@@ -65,10 +96,8 @@ Currently building the **Aurora Ecosystem**: an integrated suite spanning wareho
 ## 📫 Connect
 
 <p align="center">
-  <a href="https://github.com/aiexkwan"><img src="https://img.shields.io/badge/GitHub-000?style=flat&logo=github&logoColor=white"/></a>
-  <a href="mailto:aiexkwan@gmail.com"><img src="https://img.shields.io/badge/Email-F97316?style=flat&logo=gmail&logoColor=white"/></a>
+  <a href="https://github.com/aiexkwan"><img src="https://img.shields.io/badge/GitHub-1a1b26?style=flat&logo=github&logoColor=7aa2f7"/></a>
+  <a href="mailto:aiexkwan@gmail.com"><img src="https://img.shields.io/badge/Email-1a1b26?style=flat&logo=gmail&logoColor=f7768e"/></a>
 </p>
 
----
-
-### ✨ "Build systems that learn — and people who evolve."
+<p align="center"><i>"Build systems that learn — and people who evolve."</i></p>
