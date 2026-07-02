@@ -10,47 +10,6 @@ I build production systems across the full stack — **TypeScript** web apps, **
 
 One shared data layer. Every project plugs into it.
 
-```mermaid
-graph TB
-    subgraph DATA["☁️ Shared Data Layer"]
-        DB[("Supabase<br/>PostgreSQL · RLS · Edge Functions")]
-    end
-
-    subgraph PROD["🏭 Production Systems"]
-        WMS["<b>Aurora-MS</b><br/>Enterprise Web WMS<br/><i>Next.js · AI SDK</i>"]
-        TRADE["<b>Aurora-Trading</b><br/>Algo Crypto Trading Bot<br/><i>Rust · HyperLiquid</i>"]
-    end
-
-    subgraph AI["🤖 AI Control Plane"]
-        OS["<b>AuroraOS</b><br/>Desktop AI Assistant<br/><i>Electron · Claude Code Gateway</i>"]
-        MCP["<b>Aurora-MCP</b><br/>Custom MCP Server<br/><i>Finance · Purchases · PnL</i>"]
-        CC["Claude Code Harness<br/><i>skills · hooks · agents</i>"]
-    end
-
-    subgraph TOOLING["🧰 Dev Tooling"]
-        CLI["<b>Aurora-CLI</b><br/>DB Security Gate · Quality Gates<br/><i>Bun</i>"]
-        SL["<b>Aurora-statusline</b><br/>Claude Code Status Line"]
-        VAULT["<b>Memory Vault</b><br/>ADRs · FDRs · Code Wiki"]
-    end
-
-    WMS --> DB
-    TRADE --> DB
-    MCP --> DB
-    OS --> MCP
-    OS --> CC
-    CC --> MCP
-    CC -.-> VAULT
-    CC -.-> SL
-    CLI -.->|quality gates| WMS
-    CLI -.->|quality gates| TRADE
-    CLI -.->|quality gates| OS
-
-    style DATA fill:#1a1b26,stroke:#7aa2f7,color:#c0caf5
-    style PROD fill:#1a1b26,stroke:#9ece6a,color:#c0caf5
-    style AI fill:#1a1b26,stroke:#bb9af7,color:#c0caf5
-    style TOOLING fill:#1a1b26,stroke:#e0af68,color:#c0caf5
-```
-
 | Project | Description | Tech | |
 |:--|:--|:--|:--:|
 | **Aurora-MS** | Enterprise Web WMS serving live manufacturing ops — label printing, route planning, RLS multi-tenancy, AI-assisted operations | TypeScript · Next.js · Supabase · AI SDK | 🔒 |
@@ -97,7 +56,7 @@ graph TB
 
 <p align="center">
   <a href="https://github.com/aiexkwan"><img src="https://img.shields.io/badge/GitHub-1a1b26?style=flat&logo=github&logoColor=7aa2f7"/></a>
-  <a href="mailto:aiexkwan@gmail.com"><img src="https://img.shields.io/badge/Email-1a1b26?style=flat&logo=gmail&logoColor=f7768e"/></a>
+  <a href="mailto:alexanderkcc1112@gmail.com"><img src="https://img.shields.io/badge/Email-1a1b26?style=flat&logo=gmail&logoColor=f7768e"/></a>
 </p>
 
 <p align="center"><i>"Build systems that learn — and people who evolve."</i></p>
