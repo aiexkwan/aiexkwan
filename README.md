@@ -1,54 +1,29 @@
 # Alex Kwan · `aiexkwan`
 
-**Full-stack Engineer · AI-Augmented Builder** — Manchester, UK 🇬🇧
+**Full-stack engineer** — Manchester, UK 🇬🇧
 
-I build production systems across the full stack — **TypeScript** web apps, **Rust** trading engines — and wire them together with **AI agent orchestration**, a **custom MCP server**, and a heavily-tuned **Claude Code harness**.
+I build production systems across the stack: **TypeScript** web apps, **Rust** trading infrastructure, and the tooling that lets AI agents work on them.
 
 ---
 
-## 🌌 Aurora Ecosystem
+## 🛠 Projects
 
-One shared data layer. Every project plugs into it.
-
-| Project | Description | Tech | |
+| Project | What it is | Tech | |
 |:--|:--|:--|:--:|
-| **Aurora-MS** | Enterprise Web WMS serving live manufacturing ops — label printing, route planning, RLS multi-tenancy, AI-assisted operations | TypeScript · Next.js · Supabase · AI SDK | 🔒 |
-| **AuroraOS** | Local desktop AI assistant — Electron gateway control plane for Claude Code session orchestration | TypeScript · Electron · Supabase | 🔒 |
-| **Aurora-Trading** | Algorithmic crypto trading bot — regime detection, risk management, live PnL tracking | Rust · HyperLiquid SDK · SQLx | 🔒 |
-| **Aurora-MCP** | Custom MCP server — finance aggregation, purchase tracking, trading PnL, personal data tools | TypeScript · Supabase · Vercel | 🔒 |
-| **Aurora-CLI** | Developer CLI — DB security gate, parallel quality gates, worktree state-machine merge, session analytics | TypeScript · Bun | 🔒 |
-| **Memory Vault** | Cross-project knowledge store — ADRs, FDRs, decision records, code wiki | Markdown | 🔒 |
-
-## 🌍 Open Source
-
-| Project | Role | Description | Tech |
-|:--|:--|:--|:--|
-| [**Aurora-statusline**](https://github.com/aiexkwan/Aurora-statusline) | ⭐ Author | Rich status line for Claude Code — model, context, cache & cost tracking | TypeScript |
-| [**agentpet**](https://github.com/ntd4996/agentpet) | 🤝 Contributor · 10 merged PRs | Native macOS menu bar desktop pet that monitors AI coding agents in real time | Swift · SwiftUI |
-| [**TokenBar**](https://github.com/Nanako0129/TokenBar) | 🤝 Contributor · 2 merged PRs | AI token usage & quota monitor for the macOS menu bar — Liquid Glass, 3D contribution graph | Swift · Rust FFI |
+| **Aurora-MS** | AI-driven, multi-tenant operations SaaS for UK SMEs — inventory, receiving, production, sales and delivery on one shared dataset, with an embedded AI assistant | TypeScript · Next.js · Supabase · Stripe | 🔒 |
+| **AURIX** | Desktop coding ADE (Agent Development Environment) — daemon-backed agent sessions, MCP plugin management, workflow pipelines, embedded browser | TypeScript · Rust · Electron | 🔒 |
+| **AUREX** | Automated Hyperliquid perpetuals trading system — strategy, risk control, execution and backtesting | Rust · SQLx · Electron | 🔒 |
+| **NEXARA** | Browser-based 2.5D pixel ARPG MMO | TypeScript · React · PixiJS · Supabase | 🔒 |
 
 ---
 
 ## 🧰 Tech Stack
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,nextjs,react,tailwind,supabase,postgres,rust,swift,bun,electron,docker,vercel,git,githubactions&perline=7" />
-</p>
-
-- **Web** — Next.js (App Router) · React · Tailwind · shadcn/ui · TanStack Query
-- **Backend** — Supabase (Auth / RLS / Edge Functions / Realtime) · PostgreSQL
-- **Systems** — Rust (async, workspace crates) · SQLx · HyperLiquid SDK
-- **AI** — Custom MCP servers · Claude Code harness (skills / hooks / subagents / workflows) · Vercel AI SDK
-- **Dev** — Bun · GitHub Actions · Playwright · Vitest
-
----
-
-## 📊 Stats
-
-<p align="center">
-  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=aiexkwan&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&bg_color=1a1b26" />
-  <img height="160em" src="https://github-readme-streak-stats.herokuapp.com/?user=aiexkwan&theme=tokyonight&hide_border=true&background=1a1b26" />
-</p>
+- **Web** — Next.js (App Router) · React · Tailwind · TanStack Query
+- **Backend** — Supabase (Auth / RLS / Realtime) · PostgreSQL
+- **Systems** — Rust · SQLx
+- **Desktop** — Electron · Swift / SwiftUI
+- **AI** — MCP servers · Claude Code · Vercel AI SDK
 
 ---
 
@@ -58,5 +33,3 @@ One shared data layer. Every project plugs into it.
   <a href="https://github.com/aiexkwan"><img src="https://img.shields.io/badge/GitHub-1a1b26?style=flat&logo=github&logoColor=7aa2f7"/></a>
   <a href="mailto:alexanderkcc1112@gmail.com"><img src="https://img.shields.io/badge/Email-1a1b26?style=flat&logo=gmail&logoColor=f7768e"/></a>
 </p>
-
-<p align="center"><i>"Build systems that learn — and people who evolve."</i></p>
