@@ -11,9 +11,10 @@ I build production systems across the stack: **TypeScript** web apps, **Rust** t
 | Project | What it is | Tech | |
 |:--|:--|:--|:--:|
 | **Aurora-MS** | AI-driven, multi-tenant operations SaaS for UK SMEs — inventory, receiving, production, sales and delivery on one shared dataset, with an embedded AI assistant | TypeScript · Next.js · Supabase · Stripe | 🔒 |
-| **AURIX** | Desktop coding ADE (Agent Development Environment) — daemon-backed agent sessions, MCP plugin management, workflow pipelines, embedded browser | TypeScript · Rust · Electron | 🔒 |
+| **[AURIX](https://github.com/aiexkwan/aurix-releases)** | Desktop ADE (Agent Development Environment) for AI coding agents on macOS & Windows — run several agents side by side, answer approvals in one place, review tasks before merge, manage MCP plugins, built-in browser, shared memory, remote access | Rust · TypeScript · Electron | 🔒 source · 📦 releases public |
 | **AUREX** | Automated Hyperliquid perpetuals trading system — strategy, risk control, execution and backtesting | Rust · SQLx · Electron | 🔒 |
 | **NEXARA** | Browser-based 2.5D pixel ARPG MMO | TypeScript · React · PixiJS · Supabase | 🔒 |
+| **claude-skills** | Personal Claude Code skill set — debugging, review, architecture / UX / AX improvement, design, shipping and wrap-up workflows | Markdown · JavaScript · Shell | 🔒 |
 
 ---
 
@@ -23,7 +24,7 @@ I build production systems across the stack: **TypeScript** web apps, **Rust** t
 - **Backend** — Supabase (Auth / RLS / Realtime) · PostgreSQL
 - **Systems** — Rust · SQLx
 - **Desktop** — Electron · Swift / SwiftUI
-- **AI** — MCP servers · Claude Code · Vercel AI SDK
+- **AI** — MCP servers · Claude Code (skills, agents) · Vercel AI SDK · Anthropic API · OpenRouter
 
 ---
 
